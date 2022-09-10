@@ -2,7 +2,6 @@
   "name": "vite-plugin",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -14,9 +13,12 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@svgr/core": "^6.3.1",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
+    "@types/resolve": "^1.20.2",
     "@vitejs/plugin-react": "^2.1.0",
+    "resolve": "^1.22.1",
     "typescript": "^4.6.4",
     "vite": "^3.1.0"
   }
