@@ -5,5 +5,5 @@ import svgr from './plugins/svgr'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), virtual(), svgr({ defaultExport: 'component' })],
+  plugins: [react(), virtual(), svgr({ defaultExport: 'url' })],
 })

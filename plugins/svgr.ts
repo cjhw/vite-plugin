@@ -35,11 +35,11 @@ export default function viteSvgrPlugin(options: SvgrOptions): Plugin {
       let componentCode = svgrResult
       if (defaultExport === 'url') {
         // 加上 Vite 默认的 `export default 资源路径`
-        componentCode += code
         componentCode = svgrResult.replace(
           'export default ReactComponent',
           'export { ReactComponent }'
         )
+        componentCode += code
       }
       // 5. 利用 esbuild，将组件中的 jsx 代码转译为浏览器可运行的代码;
       const result = await esbuild.transform(componentCode, {

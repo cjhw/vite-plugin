@@ -1,9 +1,11 @@
-import Logo from '../public/vite.svg'
+// import Logo from '../public/vite.svg'
+import LogoUrl, { ReactComponent as Logo } from './assets/react.svg'
 
 function App() {
   return (
     <>
-      <Logo />
+      {/* <Logo /> */}
+      <img src={LogoUrl} alt="" className="logo" />
     </>
   )
 }
